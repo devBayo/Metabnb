@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #444;
+  color: #434343;
   box-sizing: border-box;
   line-height: 1.6;
 }
@@ -22,4 +22,8 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
 }
