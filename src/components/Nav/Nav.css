@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 2.8rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #434343;
+  font-size: 1.6rem;
+  padding: 2.9rem 0;
+  display: inline-block;
+}
+
+button {
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  border: none;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  font-size: 1.6rem;
+  font-weight: 500;
+}

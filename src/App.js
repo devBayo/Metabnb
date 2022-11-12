@@ -1,8 +1,11 @@
+import React from 'react';
+import Nav from './components/Nav/Nav';
+
 function App() {
   return (
-    <div className="container">
-      <h2>Hello world</h2>
-    </div>
+    <React.Fragment>
+      <Nav />
+    </React.Fragment>
   );
 }
 
