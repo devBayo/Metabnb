@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Red+Rose:wght@400;500;600;700&display=swap');
 
 *,
 *::after,
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Red Rose', sans-serif;
   color: #434343;
   box-sizing: border-box;
   line-height: 1.6;
