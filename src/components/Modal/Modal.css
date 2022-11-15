@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  max-width: 43rem;
+  width: 100%;
+  padding: 2.3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  background-color: #fff;
+  border-radius: 0.7rem;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.modal-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -2.3rem;
+  border-bottom: 1px solid #cfd8dc;
+  width: calc(100% + 2 * (2.3rem));
+}
+
+.modal-header h2 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.modal-header ion-icon {
+  font-size: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.7rem;
+  font-family: 'Sora', sans-serif;
+}
+
+.wallet:hover,
+.modal ion-icon:hover {
+  cursor: pointer;
+}
+
+.wallet:first-child {
+  background: #f8f9fa;
+  margin-bottom: 1.4rem;
+}
+
+.wallet img {
+  height: 3.3rem;
+}
+
+.wallet h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.wallet ion-icon {
+  margin-left: auto;
+  font-size: 2rem;
+  color: #959da6;
+}
