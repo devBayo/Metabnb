@@ -1,19 +1,18 @@
 import React from 'react';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import LearnMore from './components/LearnMore/LearnMore';
+import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
-import Showcase from './components/Showcase/Showcase';
-import Sponsors from './components/Sponsors/Sponsors';
+import Home from './pages/Home';
+import Footer from './components/Footer/Footer';
+import Places from './pages/Places';
 
 function App() {
   return (
     <React.Fragment>
       <Nav />
-      <Header />
-      <Sponsors />
-      <Showcase />
-      <LearnMore />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/place-to-stay" element={<Places />} />
+      </Routes>
       <Footer />
     </React.Fragment>
   );
