@@ -1,0 +1,28 @@
+.learn-more-section {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border: 1px solid #000000;
+  padding: 6.5rem 0;
+  color: #fff;
+}
+
+.learn-more-container {
+  display: grid;
+  grid-template-columns: 0.6fr 1.3fr;
+  align-items: center;
+  height: 100%;
+}
+
+.text-desc {
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+}
+
+.btn-learn-more {
+  background-color: #fff;
+  color: #a02279;
+}
+
+.learn-more-img {
+  width: 75%;
+  justify-self: end;
+}
