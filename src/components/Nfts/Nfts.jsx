@@ -31,8 +31,8 @@ const Nft = props => {
 const Nfts = props => {
   return (
     <div className="nfts">
-      {props.nfts.map(nft => (
-        <Nft nft={nft} />
+      {props.nfts.map((nft, i) => (
+        <Nft key={i} nft={nft} />
       ))}
     </div>
   );

@@ -7,22 +7,22 @@ const Nav = () => {
       <img src={NavLogo} alt="Metabnb-Logo" className="nav-logo" />
       <ul className="nav-links">
         <li className="nav-item">
-          <a href="#s" className="nav-link">
+          <a href="/#" className="nav-link">
             Home
           </a>
         </li>
         <li className="nav-item">
-          <a href="#m" className="nav-link">
+          <a href="/#" className="nav-link">
             Place to stay
           </a>
         </li>
         <li className="nav-item">
-          <a href="#m" className="nav-link">
+          <a href="/#" className="nav-link">
             NFTs
           </a>
         </li>
         <li className="nav-item">
-          <a href="#m" className="nav-link">
+          <a href="/#" className="nav-link">
             Community
           </a>
         </li>
