@@ -1,12 +1,7 @@
 .showcase-section {
-  padding: 5rem 0;
+  padding: 5rem 0 8rem 0;
 }
 
-.heading-secondary {
+.showcase-section .heading-secondary {
   text-align: center;
-  font-size: 4.2rem;
-  margin-bottom: 3rem;
 }
-
-/* .showcase-section .heading-secondary {
-} */
