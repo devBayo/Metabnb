@@ -1,8 +1,38 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import FooterLogo from '../../assets/footer_logo.png';
 import Facebook from '../../assets/facebook.svg';
 import Instagram from '../../assets/instagram.svg';
 import Twitter from '../../assets/twitter.svg';
+
+const links = [
+  { title: 'Community', links: ['NFT', 'Tokens', 'Landlords', 'Discord'] },
+  {
+    title: 'Places',
+    links: ['Castle', 'Farms', 'Beach', 'Learn more'],
+  },
+  {
+    title: 'About us',
+    links: ['Road map', 'Creators', 'Career', 'Contact us'],
+  },
+];
+
+const FooterNav = props => {
+  return (
+    <nav className="nav-col">
+      <h4 className="footer-title">{props.title}</h4>
+      <ul className="footer-nav">
+        {props.links.map((link, i) => (
+          <li key={i}>
+            <Link href="/#" className="footer-link">
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 const Footer = () => {
   return (
@@ -12,96 +42,35 @@ const Footer = () => {
           <img src={FooterLogo} alt="logo" className="footer-logo" />
 
           <div className="social-links">
-            <a className="social-link" href="https://facebook.com/metabnb">
+            <a
+              target="blank"
+              className="social-link"
+              href="https://facebook.com/metabnb"
+            >
               <img src={Facebook} alt="facebook logo" />
             </a>
 
-            <a className="social-link" href="https://instagram.com/metabnb">
+            <a
+              target="blank"
+              className="social-link"
+              href="https://instagram.com/metabnb"
+            >
               <img src={Instagram} alt="instagram logo" />
             </a>
 
-            <a className="social-link" href="https://twitter.com/metabnb">
+            <a
+              target="blank"
+              className="social-link"
+              href="https://twitter.com/metabnb"
+            >
               <img src={Twitter} alt="twitter logo" />
             </a>
           </div>
         </div>
 
-        {/* Component */}
-        <nav className="nav-col">
-          <h4 className="footer-title">Community</h4>
-          <ul className="footer-nav">
-            <li>
-              <a href="/#" className="footer-link">
-                NFT
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Tokens
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Landlords
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Discord
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <nav className="nav-col">
-          <h4 className="footer-title">Places</h4>
-          <ul className="footer-nav">
-            <li>
-              <a href="/#" className="footer-link">
-                Castle
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Farms
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Beach
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <nav className="nav-col">
-          <h4 className="footer-title">About us</h4>
-          <ul className="footer-nav">
-            <li>
-              <a href="/#" className="footer-link">
-                Road map
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Creators
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Career
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="footer-link">
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {links.map((link, i) => (
+          <FooterNav key={i} title={link.title} links={link.links} />
+        ))}
 
         <p className="copyright">
           <span>&copy;</span> 2022 Metabnb

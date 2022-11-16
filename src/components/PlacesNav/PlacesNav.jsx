@@ -1,55 +1,29 @@
+import './PlacesNav.css';
+
+// prettier-ignore
+const places = ['Restaurant','Cottage','Castle',
+'Fantastic City','Beach','Carbins','Off-grid',
+'Farm',
+];
+
 const PlacesNav = () => {
   return (
-    <nav className="container nav">
-      <ul className="nav-links">
+    <nav className="container nav nav-places">
+      <ul className="nav-links nav-links__places">
+        {places.map((place, i) => (
+          <li key={i} className="nav-item">
+            <a href="/#" className="nav-link">
+              {place}
+            </a>
+          </li>
+        ))}
+
         <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Restaurant
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/place-to-stay" className="nav-link">
-            Cottage
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Castle
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Fantastic City
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Beach
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Cabins
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Off-grid
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/#" className="nav-link">
-            Farm
-          </a>
-        </li>
-        {/* <li className="nav-item">
-          <button>
+          <button className="btn btn-place">
             Location
-            <span>
-              <ion-icon name="options-sharp"></ion-icon>
-            </span>
+            <ion-icon name="options-sharp"></ion-icon>
           </button>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );
