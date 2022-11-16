@@ -12,8 +12,11 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 5.8rem;
   align-items: center;
+}
+
+.nav-links__main {
+  gap: 5.8rem;
 }
 
 .nav-link:link,
@@ -44,7 +47,7 @@
 }
 
 @media (max-width: 62.5em) {
-  .nav-links {
+  .nav-links__main {
     display: flex;
     list-style: none;
     gap: 4rem;
@@ -68,7 +71,7 @@
     color: #a02279;
   }
 
-  .nav-links {
+  .nav-links__main {
     background-color: rgba(160, 34, 120, 0.95);
     backdrop-filter: blur(2px);
     position: fixed;
@@ -86,15 +89,15 @@
     transition: all 0.5s;
   }
 
-  .nav-open .nav-links {
+  .nav-open .nav-links__main {
     opacity: 100;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
   }
 
-  .nav-link:link,
-  .nav-link:visited {
+  .nav-link__main:link,
+  .nav-link__main:visited {
     color: #fff;
     font-size: 1.7rem;
   }
