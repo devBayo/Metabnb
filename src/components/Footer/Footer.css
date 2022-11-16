@@ -59,3 +59,20 @@
 .copyright span {
   font-size: 1.8rem;
 }
+
+@media (max-width: 42em) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .logo-col {
+    height: 15rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+}
