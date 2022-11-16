@@ -3,12 +3,14 @@ import './Modal.css';
 import MetaMaskLogo from '../../assets/metamask_logo.png';
 import WalletCLogo from '../../assets/walletconnect_logo.png';
 
-const ModalOverlay = () => {
+const ModalOverlay = props => {
   return (
     <div className="modal">
       <div className="modal-header">
         <h2>Connect wallet</h2>
-        <ion-icon name="close-sharp" className="close-icon"></ion-icon>
+        <span onClick={props.onClick}>
+          <ion-icon name="close-sharp" className="close-icon"></ion-icon>
+        </span>
       </div>
       <div className="modal-content">
         <p>Choose your preferred wallet:</p>
