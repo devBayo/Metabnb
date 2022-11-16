@@ -32,6 +32,15 @@ body {
   margin-bottom: 3rem;
 }
 
-button:hover {
+.btn {
+  padding: 1.2rem 3rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn:hover {
   cursor: pointer;
 }

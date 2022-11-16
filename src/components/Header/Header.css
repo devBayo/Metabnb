@@ -4,7 +4,6 @@
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  /* padding-left: 3rem; */
 }
 
 .hero-text-box {
@@ -44,12 +43,7 @@
   margin: 0 auto;
 }
 
-form {
-  /* display: flex; */
-  width: 100%;
-}
-
-input {
+.input-location {
   border-radius: 0.7rem 0 0 0.7rem;
   width: 55%;
   padding: 1.5rem;
@@ -57,10 +51,9 @@ input {
   font-size: 1.5rem;
 }
 
-form button {
+.btn-location {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  padding: 1.5rem;
   border-radius: 0 0.7rem 0.7rem 0;
   width: 30%;
-  padding: 1.5rem;
-  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
-  /* border: 1px solid #a02279; */
 }
