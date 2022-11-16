@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './PlacesNav.css';
 
 // prettier-ignore
@@ -12,9 +13,9 @@ const PlacesNav = () => {
       <ul className="nav-links nav-links__places">
         {places.map((place, i) => (
           <li key={i} className="nav-item">
-            <a href="/#" className="nav-link">
+            <Link href="#" className="nav-link">
               {place}
-            </a>
+            </Link>
           </li>
         ))}
 
