@@ -25,10 +25,10 @@ const Nav = props => {
   return (
     <nav className={`container nav ${props.navIsOpen ? 'nav-open' : ''}`}>
       <img src={NavLogo} alt="Metabnb-Logo" className="nav-logo" />
-      <ul className="nav-links">
+      <ul className="nav-links nav-links__main">
         {links.map((link, i) => (
           <li key={i} className="nav-item">
-            <Link onClick={props.toggleNav} to={link.href} className="nav-link">
+            <Link onClick={props.toggleNav} to={link.href} className="nav-link nav-link__main">
               {link.text}
             </Link>
           </li>
