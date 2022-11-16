@@ -13,7 +13,7 @@ const PlacesNav = () => {
       <ul className="nav-links nav-links__places">
         {places.map((place, i) => (
           <li key={i} className="nav-item">
-            <Link href="#" className="nav-link">
+            <Link to="#" className="nav-link">
               {place}
             </Link>
           </li>
