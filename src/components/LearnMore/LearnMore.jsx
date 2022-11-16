@@ -6,7 +6,9 @@ const LearnMore = () => {
     <section className="learn-more-section">
       <div className="container learn-more-container">
         <div className="text-box">
-          <h2 className="heading-secondary">Metabnb NFTs</h2>
+          <h2 className="heading-secondary heading-secondary__more">
+            Metabnb NFTs
+          </h2>
           <p className="text-desc">
             Discover our NFT gift cards collection. Loyal customers gets amazing
             gift cards which are traded as NFTs. These NFTs gives our cutomer
