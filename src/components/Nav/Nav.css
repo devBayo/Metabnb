@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2.9rem 3.2rem;
 }
 
 .nav-logo {
@@ -20,10 +21,81 @@
   text-decoration: none;
   color: #434343;
   font-size: 1.6rem;
-  padding: 2.9rem 0;
   display: inline-block;
 }
 
 .btn-cta {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+.btn-cta__alt {
+  display: none;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  display: none;
+}
+
+.btn-mobile-nav ion-icon {
+  color: #333;
+  font-size: 4rem;
+}
+
+@media (max-width: 62.5em) {
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 44em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 30;
+  }
+
+  .btn-cta__main {
+    display: none;
+  }
+
+  .btn-cta__alt {
+    display: inline-block;
+    background: #fff;
+    color: #a02279;
+  }
+
+  .nav-links {
+    background-color: rgba(160, 34, 120, 0.95);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: all 0.5s;
+  }
+
+  .nav-open .nav-links {
+    opacity: 100;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    color: #fff;
+    font-size: 1.7rem;
+  }
 }
