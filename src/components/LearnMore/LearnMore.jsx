@@ -12,7 +12,7 @@ const LearnMore = () => {
             gift cards which are traded as NFTs. These NFTs gives our cutomer
             access to loads of our exclusive services.
           </p>
-          <button className="btn-learn-more">Learn more</button>
+          <button className="btn btn-learn-more">Learn more</button>
         </div>
         <img
           src={Frame}
