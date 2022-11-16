@@ -14,3 +14,29 @@
 .sponsors img {
   height: 4rem;
 }
+
+@media (max-width: 44em) {
+  .sponsors img {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 28.5em) {
+  .sponsors {
+    padding: 0 2rem;
+  }
+
+  .sponsors img {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 21em) {
+  .sponsors {
+    padding: 0 1rem;
+  }
+
+  .sponsors img {
+    height: 2rem;
+  }
+}
