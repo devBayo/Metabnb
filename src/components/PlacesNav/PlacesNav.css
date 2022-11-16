@@ -1,0 +1,21 @@
+.nav-places {
+  margin-top: 5rem;
+}
+
+.nav-links__places {
+  gap: 5.8rem;
+}
+
+.btn-place {
+  color: #434343;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.btn-place ion-icon {
+  font-size: 2rem;
+}
