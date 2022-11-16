@@ -2,8 +2,13 @@
   margin-top: 5rem;
 }
 
+.nav-places {
+  padding: 0 3.2rem;
+}
+
 .nav-links__places {
-  gap: 5.8rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .btn-place {
@@ -18,4 +23,35 @@
 
 .btn-place ion-icon {
   font-size: 2rem;
+}
+
+.filter {
+  display: none;
+}
+
+@media (max-width: 46em) {
+  .nav-link__places:link,
+  .nav-link__places:visited {
+    display: none;
+  }
+
+  .filter {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .nav-places {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 33em) {
+  .nav-places {
+    padding: 0;
+  }
+  .btn-place {
+    gap: 4rem;
+    padding: 1.2rem 1rem;
+  }
 }
