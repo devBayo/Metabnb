@@ -20,16 +20,19 @@ body {
   color: #434343;
   box-sizing: border-box;
   line-height: 1.6;
+  position: relative;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .heading-secondary {
   font-size: 4.2rem;
   margin-bottom: 3rem;
+  line-height: 1.2;
 }
 
 .btn {
@@ -44,4 +47,26 @@ body {
 
 .btn:hover {
   cursor: pointer;
+}
+
+@media (max-width: 69em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 55em) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-secondary {
+    font-size: 3.7rem;
+  }
 }
