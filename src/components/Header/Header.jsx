@@ -16,9 +16,15 @@ const Header = () => {
           comfort zone
         </p>
 
-        <form action="">
-          <input type="text" placeholder="Search for location" />
-          <button type="submit">Search</button>
+        <form>
+          <input
+            type="text"
+            placeholder="Search for location"
+            className="input-location"
+          />
+          <button type="submit" className="btn btn-location">
+            Search
+          </button>
         </form>
       </div>
 
